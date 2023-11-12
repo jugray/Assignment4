@@ -1,6 +1,6 @@
 # Assignment4
 
-The Dharma Initiative is lookikng for new applicants!
+The Dharma Initiative is looking for new applicants!
 
 This application will evaluate applicant knowedge based retention of training materials.
 
