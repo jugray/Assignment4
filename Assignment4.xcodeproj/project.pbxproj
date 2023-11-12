@@ -16,6 +16,8 @@
 		0CA27FC72AFFF2CD002355D0 /* Assignment4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA27FC62AFFF2CD002355D0 /* Assignment4Tests.swift */; };
 		0CA27FD12AFFF2CD002355D0 /* Assignment4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA27FD02AFFF2CD002355D0 /* Assignment4UITests.swift */; };
 		0CA27FD32AFFF2CD002355D0 /* Assignment4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA27FD22AFFF2CD002355D0 /* Assignment4UITestsLaunchTests.swift */; };
+		0CA27FE02B0094F4002355D0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA27FDF2B0094F4002355D0 /* Location.swift */; };
+		0CA27FE42B009757002355D0 /* AdventureLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA27FE32B009757002355D0 /* AdventureLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0CA27FCC2AFFF2CD002355D0 /* Assignment4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA27FD02AFFF2CD002355D0 /* Assignment4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4UITests.swift; sourceTree = "<group>"; };
 		0CA27FD22AFFF2CD002355D0 /* Assignment4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CA27FDF2B0094F4002355D0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		0CA27FE32B009757002355D0 /* AdventureLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		0CA27FAE2AFFF2CA002355D0 /* Assignment4 */ = {
 			isa = PBXGroup;
 			children = (
+				0CA27FE12B009717002355D0 /* View */,
+				0CA27FE22B009724002355D0 /* Model */,
 				0CA27FAF2AFFF2CA002355D0 /* AppDelegate.swift */,
 				0CA27FB12AFFF2CA002355D0 /* SceneDelegate.swift */,
-				0CA27FB32AFFF2CA002355D0 /* ViewController.swift */,
 				0CA27FB52AFFF2CA002355D0 /* Main.storyboard */,
 				0CA27FB82AFFF2CD002355D0 /* Assets.xcassets */,
 				0CA27FBA2AFFF2CD002355D0 /* LaunchScreen.storyboard */,
@@ -125,6 +130,23 @@
 				0CA27FD22AFFF2CD002355D0 /* Assignment4UITestsLaunchTests.swift */,
 			);
 			path = Assignment4UITests;
+			sourceTree = "<group>";
+		};
+		0CA27FE12B009717002355D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CA27FB32AFFF2CA002355D0 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CA27FE22B009724002355D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CA27FDF2B0094F4002355D0 /* Location.swift */,
+				0CA27FE32B009757002355D0 /* AdventureLogic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA27FE42B009757002355D0 /* AdventureLogic.swift in Sources */,
 				0CA27FB42AFFF2CA002355D0 /* ViewController.swift in Sources */,
 				0CA27FB02AFFF2CA002355D0 /* AppDelegate.swift in Sources */,
+				0CA27FE02B0094F4002355D0 /* Location.swift in Sources */,
 				0CA27FB22AFFF2CA002355D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

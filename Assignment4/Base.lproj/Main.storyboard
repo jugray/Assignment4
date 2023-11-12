@@ -1,24 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-Ln-JrO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ICc-wD-ymh">
+                                <rect key="frame" x="30" y="89" width="333" height="699"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Yr-Mg-GLu" userLabel="TopStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="269"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-dharma-initiative-hinduism-manusmriti-vedas-5b0a364504a204.460671741527395909019" translatesAutoresizingMaskIntoConstraints="NO" id="N0z-Jk-bFB">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="269"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yf-2R-pLf">
+                                                <rect key="frame" x="166.66666666666663" y="0.0" width="166.33333333333337" height="269"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oDX-Ac-F8Y" userLabel="CenterStack">
+                                        <rect key="frame" x="0.0" y="269" width="333" height="268.66666666666674"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have been assigned to the Hydra Station. One of the Polar Bears is ignoring the food puzzle, what do you do?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62l-5W-5lr">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="268.66666666666669"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JbQ-0e-d5L" userLabel="ButtonStack">
+                                        <rect key="frame" x="0.0" y="537.66666666666663" width="333" height="161.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I84-dy-o4n">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="75.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <backgroundConfiguration key="background" cornerRadius="11">
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Choice1">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="AmericanTypewriter"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Urg-S2-GXn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYZ-TM-I9s">
+                                                <rect key="frame" x="0.0" y="85.666666666666742" width="333" height="75.666666666666686"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <backgroundConfiguration key="background" cornerRadius="11">
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Choice2">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="AmericanTypewriter"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSg-ze-Rlw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oDX-Ac-F8Y" firstAttribute="height" secondItem="1Yr-Mg-GLu" secondAttribute="height" id="Jlk-dS-n5U"/>
+                                    <constraint firstItem="JbQ-0e-d5L" firstAttribute="height" secondItem="1Yr-Mg-GLu" secondAttribute="height" multiplier="0.6" id="PFg-2v-dez"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gF6-Ln-JrO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6bu-jh-stO"/>
+                            <constraint firstItem="gF6-Ln-JrO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Bhs-aH-ksD"/>
+                            <constraint firstAttribute="trailing" secondItem="ICc-wD-ymh" secondAttribute="trailing" constant="30" id="C1s-L5-0va"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ICc-wD-ymh" secondAttribute="bottom" constant="30" id="FPV-g0-rJ7"/>
+                            <constraint firstItem="ICc-wD-ymh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="IDe-Fd-31C"/>
+                            <constraint firstAttribute="bottom" secondItem="gF6-Ln-JrO" secondAttribute="bottom" id="M1Z-5Y-3GU"/>
+                            <constraint firstAttribute="bottom" secondItem="gF6-Ln-JrO" secondAttribute="bottom" id="MMa-bN-WHd"/>
+                            <constraint firstItem="gF6-Ln-JrO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OUP-8T-dCv"/>
+                            <constraint firstItem="ICc-wD-ymh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zOm-ur-xLX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="applicantStatusLabel" destination="7Yf-2R-pLf" id="u90-q7-eWv"/>
+                        <outlet property="button1" destination="I84-dy-o4n" id="EWp-8M-99b"/>
+                        <outlet property="button2" destination="DYZ-TM-I9s" id="SPq-Sv-GwO"/>
+                        <outlet property="questionLabel" destination="62l-5W-5lr" id="slm-aX-vsm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kisspng-dharma-initiative-hinduism-manusmriti-vedas-5b0a364504a204.460671741527395909019" width="256" height="256"/>
+        <image name="wallpaper" width="466.66665649414062" height="350"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
